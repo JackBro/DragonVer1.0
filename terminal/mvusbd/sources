@@ -1,0 +1,35 @@
+TARGETNAME=VCMobi
+TARGETTYPE=DRIVER
+DDKROOT=$(_NTDRIVE)$(_NTROOT)
+
+C_DEFINES= $(C_DEFINES) -DWMI_SUPPORT -DUSB2 -DDBG
+#C_DEFINES= $(C_DEFINES) -DWMI_SUPPORT -DUSB2
+
+TARGETPATH=obj
+
+#INCLUDES=$(DDKROOT)\private\ntos\inc; ..\..\inc; C:\NTDDK\inc\wnet			   
+
+NTTARGETFILE0=mofcomp
+
+USE_MAPSYM=1
+
+TARGETLIBS=$(DDK_LIB_PATH)\usbd.lib	\
+	   $(DDK_LIB_PATH)\ntoskrnl.lib
+
+!IF $(FREEBUILD)
+MSC_OPTIMIZATION=/Oxs 
+!ELSE
+MSC_OPTIMIZATION=/Od /Oi 
+!ENDIF
+MSC_WARNING_LEVEL=/W3 /WX
+
+#SOURCES=bulkusb.c \
+#	bulkusb.rc
+
+SOURCES=bulkusb.c \
+	bulkpnp.c \
+	bulkrwr.c \
+	bulkdev.c \
+	bulkpwr.c \
+	bulkwmi.c \
+	bulkusb.rc

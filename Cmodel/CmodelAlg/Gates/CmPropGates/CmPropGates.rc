@@ -1,0 +1,221 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文（中华人民共和国） resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_XORGATE_BOXPROP_DLG DIALOGEX 0, 0, 310, 216
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Xor Box property"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,193,107,50,14
+    PUSHBUTTON      "取消",IDCANCEL,193,128,50,14
+    GROUPBOX        "Algorithm choice",IDC_STATIC,3,1,107,36
+    GROUPBOX        "Dummy line",IDC_STATIC,122,1,73,36
+END
+
+IDD_ORGATE_BOXPROP_DLG DIALOGEX 0, 0, 283, 215
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Logic OR Box property"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,129,134,50,14
+    PUSHBUTTON      "取消",IDCANCEL,129,155,50,14
+    GROUPBOX        "Algorithm choice",IDC_STATIC,3,1,107,36
+    GROUPBOX        "Dummy line",IDC_STATIC,122,1,73,36
+END
+
+IDD_NOTGATE_BOXPROP_DLG DIALOGEX 0, 0, 299, 230
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Not Box property"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,139,146,50,14
+    PUSHBUTTON      "取消",IDCANCEL,139,167,50,14
+    GROUPBOX        "Algorithm choice",IDC_STATIC,3,1,107,36
+    GROUPBOX        "Dummy line",IDC_STATIC,122,1,73,36
+END
+
+IDD_COMGATE_BOXPROP_DLG DIALOGEX 0, 0, 302, 230
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Logical Com Box property"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,141,110,50,14
+    PUSHBUTTON      "取消",IDCANCEL,141,131,50,14
+    GROUPBOX        "Algorithm choice",IDC_STATIC,3,1,107,36
+    GROUPBOX        "Dummy line",IDC_STATIC,122,1,73,36
+END
+
+IDD_DELAYGATE_BOXPROP_DLG DIALOGEX 0, 0, 339, 241
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Delay Cell Box property"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,239,78,50,14
+    PUSHBUTTON      "取消",IDCANCEL,239,99,50,14
+    EDITTEXT        IDC_DELAYTIME_EDIT,131,112,40,14,ES_AUTOHSCROLL
+    LTEXT           "delay times",IDC_STATIC,136,99,37,8
+    GROUPBOX        "属性设置",IDC_STATIC,15,88,216,57
+    GROUPBOX        "Algorithm choice",IDC_STATIC,3,1,107,36
+    GROUPBOX        "Dummy line",IDC_STATIC,122,1,73,36
+END
+
+IDD_ANDGATE_BOXPROP_DLG DIALOGEX 0, 0, 310, 216
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Logical And Box property"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,193,107,50,14
+    PUSHBUTTON      "取消",IDCANCEL,193,128,50,14
+    GROUPBOX        "Algorithm choice",IDC_STATIC,3,1,107,36
+    GROUPBOX        "Dummy line",IDC_STATIC,122,1,73,36
+END
+
+IDD_ADDGATE_BOXPROP_DLG DIALOGEX 0, 0, 310, 216
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Add Box property"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,193,107,50,14
+    PUSHBUTTON      "取消",IDCANCEL,193,128,50,14
+    GROUPBOX        "Algorithm choice",IDC_STATIC,3,1,107,36
+    GROUPBOX        "Dummy line",IDC_STATIC,122,1,73,36
+    EDITTEXT        IDC_ADD_CLIP_EDIT,43,86,40,14,ES_AUTOHSCROLL
+    LTEXT           "Clip:",IDC_STATIC,22,89,16,8
+    EDITTEXT        IDC_ADD_UNIT_EDIT,43,105,40,14,ES_AUTOHSCROLL
+    LTEXT           "Unit:",IDC_STATIC,22,108,16,8
+END
+
+IDD_SUBGATE_BOXPROP_DLG DIALOGEX 0, 0, 310, 216
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Sub Box property"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,193,107,50,14
+    PUSHBUTTON      "取消",IDCANCEL,193,128,50,14
+    GROUPBOX        "Algorithm choice",IDC_STATIC,3,1,107,36
+    GROUPBOX        "Dummy line",IDC_STATIC,122,1,73,36
+END
+
+IDD_ADD2GATE_BOXPROP_DLG DIALOGEX 0, 0, 310, 216
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Add Box property"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,193,107,50,14
+    PUSHBUTTON      "取消",IDCANCEL,193,128,50,14
+    GROUPBOX        "Algorithm choice",IDC_STATIC,3,1,107,36
+    GROUPBOX        "Dummy line",IDC_STATIC,122,1,73,36
+    EDITTEXT        IDC_ADD2_CLIP_EDIT,49,85,40,14,ES_AUTOHSCROLL
+    LTEXT           "Clip:",IDC_STATIC,22,89,16,8
+    LTEXT           "InUnit:",IDC_STATIC,17,108,23,8
+    LTEXT           "OutUnit:",IDC_STATIC,12,126,28,8
+    EDITTEXT        IDC_ADD2_OPDATA_EDIT,49,67,40,14,ES_AUTOHSCROLL
+    LTEXT           "operate data:",IDC_STATIC,1,71,47,8
+    COMBOBOX        IDC_ADD2_INUNIT_COMBO,49,103,40,15,CBS_DROPDOWN | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_ADD2_OUTUNIT_COMBO,49,123,40,15,CBS_DROPDOWN | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_ARITHMGATE_BOXPROP_DLG DIALOGEX 0, 0, 310, 216
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Arithmetic Box property"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,193,107,50,14
+    PUSHBUTTON      "取消",IDCANCEL,193,128,50,14
+    GROUPBOX        "Algorithm choice",IDC_STATIC,3,1,107,36
+    GROUPBOX        "Dummy line",IDC_STATIC,122,1,73,36
+    EDITTEXT        IDC_UPCLIP_EDIT,49,85,40,14,ES_AUTOHSCROLL
+    LTEXT           "UpClip:",IDC_STATIC,21,89,24,8
+    LTEXT           "InUnit:",IDC_STATIC,20,127,23,8
+    LTEXT           "OutUnit:",IDC_STATIC,16,142,28,8
+    EDITTEXT        IDC_OPDATA_EDIT,49,67,40,14,ES_AUTOHSCROLL
+    LTEXT           "operate data:",IDC_STATIC,1,71,47,8
+    COMBOBOX        IDC_INUNIT_COMBO,50,122,40,15,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_OUTUNIT_COMBO,50,139,40,15,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "LowClip:",IDC_STATIC,17,106,27,8
+    EDITTEXT        IDC_LOWCLIP_EDIT,49,103,40,14,ES_AUTOHSCROLL
+    LTEXT           "operation:",IDC_STATIC,12,55,36,8
+    COMBOBOX        IDC_OPERATION_COMBO,49,52,40,15,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+#endif    // 中文（中华人民共和国） resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding = "gb2312"?>
+<VisualStudioProject
+	ProjectType="Visual C++"
+	Version="7.00"
+	Name="mvusbd"
+	ProjectGUID="{4C64970A-E4C4-444C-B368-E5F87BAD70A8}"
+	SccProjectName=""
+	SccLocalPath=""
+	Keyword="MakeFileProj">
+	<Platforms>
+		<Platform
+			Name="Win32"/>
+	</Platforms>
+	<Configurations>
+		<Configuration
+			Name="Release|Win32"
+			OutputDirectory="$(SolutionDir)libdebug"
+			IntermediateDirectory=".\Release"
+			ConfigurationType="0"
+			UseOfMFC="0"
+			ATLMinimizesCRunTimeLibraryUsage="FALSE">
+			<Tool
+				Name="VCNMakeTool"
+				BuildCommandLine="MakeDrvr C:\NTDDK  D: Work\VCMobi free wnet "
+				ReBuildCommandLine="MakeDrvr C:\NTDDK  D: Work\VCMobi free wnet  -nmake /a"
+				Output="VCMobi.sys"/>
+		</Configuration>
+		<Configuration
+			Name="Debug|Win32"
+			OutputDirectory="$(SolutionDir)libdebug"
+			IntermediateDirectory=".\Debug"
+			ConfigurationType="0"
+			UseOfMFC="0"
+			ATLMinimizesCRunTimeLibraryUsage="FALSE">
+			<Tool
+				Name="VCNMakeTool"
+				BuildCommandLine="MakeDrvr C:\WINDDK\3790 c: \mydoc\monitor\VmonitorVer1.0\terminal\mvusbd checked wxp"
+				ReBuildCommandLine="MakeDrvr C:\WINDDK\3790 c: \mydoc\monitor\VmonitorVer1.0\terminal\mvusbd checked wxp"
+				Output="VCMobi.sys"/>
+		</Configuration>
+	</Configurations>
+	<Files>
+		<Filter
+			Name="Config file"
+			Filter="">
+			<File
+				RelativePath="MakeDrvr.bat">
+			</File>
+			<File
+				RelativePath="bulkusb.mof">
+			</File>
+			<File
+				RelativePath="makefile">
+			</File>
+			<File
+				RelativePath="makefile.inc">
+			</File>
+			<File
+				RelativePath="sources">
+			</File>
+		</Filter>
+		<Filter
+			Name="Resource Files"
+			Filter="ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe">
+			<File
+				RelativePath="bulkusb.rc">
+			</File>
+		</Filter>
+		<File
+			RelativePath="bulkdev.c">
+		</File>
+		<File
+			RelativePath="bulkdev.h">
+		</File>
+		<File
+			RelativePath="bulkpnp.c">
+		</File>
+		<File
+			RelativePath="bulkpnp.h">
+		</File>
+		<File
+			RelativePath="bulkpwr.c">
+		</File>
+		<File
+			RelativePath="bulkpwr.h">
+		</File>
+		<File
+			RelativePath="bulkrwr.c">
+		</File>
+		<File
+			RelativePath="bulkrwr.h">
+		</File>
+		<File
+			RelativePath="bulkusb.c">
+		</File>
+		<File
+			RelativePath="bulkusb.h">
+		</File>
+		<File
+			RelativePath="bulkusr.h">
+		</File>
+		<File
+			RelativePath="bulkwmi.c">
+		</File>
+		<File
+			RelativePath="bulkwmi.h">
+		</File>
+	</Files>
+	<Globals>
+	</Globals>
+</VisualStudioProject>

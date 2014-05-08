@@ -1,0 +1,35 @@
+Microsoft Visual Studio Solution File, Format Version 7.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "faac", "frontend\faac.vcproj", "{FCDA87CD-8354-4A6A-AFEB-24ED82C81B49}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libfaac", "libfaac\libfaac.vcproj", "{DF6A88F9-6B7E-4FD4-B60D-41A1751CE0B2}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libmp4v2", "common\mp4v2\libmp4v260.vcproj", "{23AFE03A-B493-4E20-8CAE-896C862E2E20}"
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		ConfigName.0 = Debug
+		ConfigName.1 = Release
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+		{FCDA87CD-8354-4A6A-AFEB-24ED82C81B49}.0 = {23AFE03A-B493-4E20-8CAE-896C862E2E20}
+		{FCDA87CD-8354-4A6A-AFEB-24ED82C81B49}.1 = {DF6A88F9-6B7E-4FD4-B60D-41A1751CE0B2}
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{FCDA87CD-8354-4A6A-AFEB-24ED82C81B49}.Debug.ActiveCfg = Debug|Win32
+		{FCDA87CD-8354-4A6A-AFEB-24ED82C81B49}.Debug.Build.0 = Debug|Win32
+		{FCDA87CD-8354-4A6A-AFEB-24ED82C81B49}.Release.ActiveCfg = Release|Win32
+		{FCDA87CD-8354-4A6A-AFEB-24ED82C81B49}.Release.Build.0 = Release|Win32
+		{DF6A88F9-6B7E-4FD4-B60D-41A1751CE0B2}.Debug.ActiveCfg = Debug|Win32
+		{DF6A88F9-6B7E-4FD4-B60D-41A1751CE0B2}.Debug.Build.0 = Debug|Win32
+		{DF6A88F9-6B7E-4FD4-B60D-41A1751CE0B2}.Release.ActiveCfg = Release|Win32
+		{DF6A88F9-6B7E-4FD4-B60D-41A1751CE0B2}.Release.Build.0 = Release|Win32
+		{23AFE03A-B493-4E20-8CAE-896C862E2E20}.Debug.ActiveCfg = Debug|Win32
+		{23AFE03A-B493-4E20-8CAE-896C862E2E20}.Debug.Build.0 = Debug|Win32
+		{23AFE03A-B493-4E20-8CAE-896C862E2E20}.Release.ActiveCfg = Release|Win32
+		{23AFE03A-B493-4E20-8CAE-896C862E2E20}.Release.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

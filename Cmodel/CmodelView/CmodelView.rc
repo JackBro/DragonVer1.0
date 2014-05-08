@@ -1,0 +1,184 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文（中华人民共和国） resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_BASECMVIEW_DLG DIALOGEX 0, 0, 419, 234
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "",IDC_STATIC,0,0,413,42
+    COMBOBOX        IDC_BLACKBOX_COMBO,165,7,87,245,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "BlackBox:",IDC_STATIC,132,10,32,8
+    PUSHBUTTON      "Insert",IDC_INSERT_BUTTON,256,4,24,14
+    PUSHBUTTON      "Run",IDC_MODULERUN_BUTTON,383,12,18,14
+    COMBOBOX        IDC_MODULES_COMBO,45,25,112,246,CBS_DROPDOWN | 
+                    CBS_AUTOHSCROLL | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Insert",IDC_INSERTMODULE_BUTTON,180,23,24,14
+    LTEXT           "Module:",IDC_STATIC,7,27,27,8
+    PUSHBUTTON      "...",IDC_OPENMODULE_BUTTON,163,24,15,13
+    PUSHBUTTON      "Save",IDC_SAVEMODULE_BUTTON,206,23,21,14
+    COMBOBOX        IDC_SIGNALIN_COMBO,326,6,30,233,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Signal In:",IDC_STATIC,285,7,32,8
+    COMBOBOX        IDC_SIGNALOUT_COMBO,326,24,30,268,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Signal Out:",IDC_STATIC,284,26,38,8
+    PUSHBUTTON      "-->",IDC_MODULECONN_BUTTON,362,23,16,14
+    PUSHBUTTON      "Load",IDC_LOADMODULE_BUTTON,230,23,20,14
+    LTEXT           "ClassType:",IDC_STATIC,5,9,36,8
+    COMBOBOX        IDC_CLASSTYPE_COMBO,45,7,80,190,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_BOXSET_DLG DIALOGEX 0, 0, 191, 66
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Box set"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,138,4,50,14
+    PUSHBUTTON      "取消",IDCANCEL,137,27,50,14
+    EDITTEXT        IDC_INPINCNT_EDIT,64,6,47,14,ES_AUTOHSCROLL
+    LTEXT           "Inpincnt (Dec)",IDC_STATIC,5,11,45,8
+    EDITTEXT        IDC_OUPINCNT_EDIT,62,27,49,14,ES_AUTOHSCROLL
+    LTEXT           "Oupincnt (Dec)",IDC_STATIC,6,31,50,8
+END
+
+IDD_INPORTPROP_DLG DIALOGEX 0, 0, 343, 145
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Input port property"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,152,119,50,14
+    PUSHBUTTON      "取消",IDCANCEL,216,117,50,14
+    LTEXT           "format",IDC_STATIC,142,47,23,8
+    COMBOBOX        IDC_FORMAT_COMBO,173,43,78,189,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "File:",IDC_STATIC,15,25,15,8
+    COMBOBOX        IDC_FILESEL_COMBO,51,22,210,166,CBS_DROPDOWN | 
+                    CBS_AUTOHSCROLL | CBS_SORT | WS_VSCROLL | WS_TABSTOP,
+                    WS_EX_ACCEPTFILES
+    PUSHBUTTON      "...",IDC_OPENFILE_BUTTON,267,21,17,12
+    LTEXT           "StreamClass:",IDC_STATIC,8,46,45,8
+    COMBOBOX        IDC_STREAMCLASS_COMBO,57,43,78,189,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Unit (B):",IDC_STATIC,156,71,28,8
+    COMBOBOX        IDC_UNIT_COMBO,194,68,45,189,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_WIDTH_EDIT,59,67,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_HEIGHT_EDIT,59,87,40,14,ES_AUTOHSCROLL
+    LTEXT           "Width(Dec)",IDC_STATIC,18,68,38,8
+    LTEXT           "Height(Dec)",IDC_STATIC,18,89,39,8
+END
+
+IDD_OUPORTPROP_DLG DIALOGEX 0, 0, 343, 167
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Output port property"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,216,123,50,14
+    PUSHBUTTON      "取消",IDCANCEL,215,139,50,14
+    LTEXT           "file",IDC_STATIC,21,21,11,8
+    COMBOBOX        IDC_FILESEL_COMBO,51,17,210,198,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP,WS_EX_ACCEPTFILES
+    PUSHBUTTON      "...",IDC_OPENFILE_BUTTON,273,17,17,12
+    CONTROL         "Save",IDC_SAVE_CHECK,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,214,39,32,10
+    LTEXT           "静态",IDC_OUTPORTDESC_STATIC,23,46,137,83
+END
+
+IDD_PINPROP_DLG DIALOGEX 0, 0, 343, 145
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Pin property"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,158,107,50,14
+    PUSHBUTTON      "取消",IDCANCEL,218,107,50,14
+    LTEXT           "静态",IDC_PINDESC_STATIC,16,8,137,83
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_BOX_MENU MENU 
+BEGIN
+    POPUP "BoxRMenu"
+    BEGIN
+        MENUITEM "&Property",                   ID_BOXRMENU_PROPERTY
+        MENUITEM "Port &Setting",               ID_BOXRMENU_SET
+        MENUITEM "&Delete",                     ID_BOXRMENU_DELETE
+    END
+END
+
+#endif    // 中文（中华人民共和国） resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

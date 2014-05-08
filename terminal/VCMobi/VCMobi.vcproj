@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding = "gb2312"?>
+<VisualStudioProject
+	ProjectType="Visual C++"
+	Version="7.00"
+	Name="VCMobi"
+	ProjectGUID="{4C64970A-E4C4-444C-B368-E5F87BAD70A8}"
+	SccProjectName=""
+	SccLocalPath=""
+	Keyword="MakeFileProj">
+	<Platforms>
+		<Platform
+			Name="Win32"/>
+	</Platforms>
+	<Configurations>
+		<Configuration
+			Name="Release|Win32"
+			OutputDirectory="$(SolutionDir)libdebug"
+			IntermediateDirectory=".\Release"
+			ConfigurationType="0"
+			UseOfMFC="0"
+			ATLMinimizesCRunTimeLibraryUsage="FALSE">
+			<Tool
+				Name="VCNMakeTool"
+				BuildCommandLine="MakeMobi C:\WINDDK\3790 d: \VmonitorVer1.0\terminal\VCMobi free wnet"
+				ReBuildCommandLine="MakeMobi C:\WINDDK\3790 d: \VmonitorVer1.0\terminal\VCMobi free wnet"
+				Output="VCMobi.sys"/>
+		</Configuration>
+		<Configuration
+			Name="Debug|Win32"
+			OutputDirectory="$(SolutionDir)libdebug"
+			IntermediateDirectory=".\Debug"
+			ConfigurationType="0"
+			UseOfMFC="0"
+			ATLMinimizesCRunTimeLibraryUsage="FALSE">
+			<Tool
+				Name="VCNMakeTool"
+				BuildCommandLine="MakeMobi C:\WINDDK\3790 d: \VmonitorVer1.0\terminal\VCMobi checked wnet"
+				ReBuildCommandLine="MakeMobi C:\WINDDK\3790 d: \VmonitorVer1.0\terminal\VCMobi checked wnet"
+				Output="VCMobi.sys"/>
+		</Configuration>
+	</Configurations>
+	<Files>
+		<Filter
+			Name="Source Files"
+			Filter="cpp;c;cxx;rc;def;r;odl;idl;hpj;bat">
+			<File
+				RelativePath="mobibulk.c">
+			</File>
+			<File
+				RelativePath="mobidev.c">
+			</File>
+			<File
+				RelativePath="mobipnp.c">
+			</File>
+			<File
+				RelativePath="mobipwr.c">
+			</File>
+			<File
+				RelativePath="mobiusb.c">
+			</File>
+			<File
+				RelativePath="mobiusb.rc">
+			</File>
+			<File
+				RelativePath="mobiwmi.c">
+			</File>
+		</Filter>
+		<Filter
+			Name="Header Files"
+			Filter="h;hpp;hxx;hm;inl">
+			<File
+				RelativePath="mobibulk.h">
+			</File>
+			<File
+				RelativePath="mobidev.h">
+			</File>
+			<File
+				RelativePath="mobidriver.h">
+			</File>
+			<File
+				RelativePath="mobipnp.h">
+			</File>
+			<File
+				RelativePath="mobipwr.h">
+			</File>
+			<File
+				RelativePath="mobiusb.h">
+			</File>
+			<File
+				RelativePath="mobiusr.h">
+			</File>
+			<File
+				RelativePath="mobiwmi.h">
+			</File>
+			<File
+				RelativePath="resource.h">
+			</File>
+		</Filter>
+		<Filter
+			Name="Config file"
+			Filter="">
+			<File
+				RelativePath=".\makefile">
+			</File>
+			<File
+				RelativePath=".\makefile.inc">
+			</File>
+			<File
+				RelativePath="makemobi.bat">
+			</File>
+			<File
+				RelativePath=".\sources">
+			</File>
+		</Filter>
+		<Filter
+			Name="Resource Files"
+			Filter="ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe">
+		</Filter>
+		<File
+			RelativePath="mobiusb.bmf">
+		</File>
+	</Files>
+	<Globals>
+	</Globals>
+</VisualStudioProject>

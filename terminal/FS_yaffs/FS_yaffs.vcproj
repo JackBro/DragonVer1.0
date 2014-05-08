@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding = "Windows-1252"?>
+<VisualStudioProject
+	ProjectType="Visual C++"
+	Version="7.00"
+	Name="FileSystem"
+	ProjectGUID="{618F1B65-DC10-47AE-9EF9-D0BD11096103}">
+	<Platforms>
+		<Platform
+			Name="Win32"/>
+	</Platforms>
+	<Configurations>
+		<Configuration
+			Name="Debug|Win32"
+			OutputDirectory="$(SolutionDir)libdebug"
+			IntermediateDirectory="Debug"
+			ConfigurationType="1">
+			<Tool
+				Name="VCCLCompilerTool"/>
+			<Tool
+				Name="VCCustomBuildTool"/>
+			<Tool
+				Name="VCLinkerTool"/>
+			<Tool
+				Name="VCMIDLTool"/>
+			<Tool
+				Name="VCPostBuildEventTool"/>
+			<Tool
+				Name="VCPreBuildEventTool"/>
+			<Tool
+				Name="VCPreLinkEventTool"/>
+			<Tool
+				Name="VCResourceCompilerTool"/>
+			<Tool
+				Name="VCWebServiceProxyGeneratorTool"/>
+			<Tool
+				Name="VCWebDeploymentTool"/>
+		</Configuration>
+		<Configuration
+			Name="Release|Win32"
+			OutputDirectory="$(SolutionDir)libdebug"
+			IntermediateDirectory="Release"
+			ConfigurationType="1">
+			<Tool
+				Name="VCCLCompilerTool"/>
+			<Tool
+				Name="VCCustomBuildTool"/>
+			<Tool
+				Name="VCLinkerTool"/>
+			<Tool
+				Name="VCMIDLTool"/>
+			<Tool
+				Name="VCPostBuildEventTool"/>
+			<Tool
+				Name="VCPreBuildEventTool"/>
+			<Tool
+				Name="VCPreLinkEventTool"/>
+			<Tool
+				Name="VCResourceCompilerTool"/>
+			<Tool
+				Name="VCWebServiceProxyGeneratorTool"/>
+			<Tool
+				Name="VCWebDeploymentTool"/>
+		</Configuration>
+	</Configurations>
+	<Files>
+		<Filter
+			Name="C/C++ Source Files"
+			Filter="cpp;c;cxx;cc">
+			<File
+				RelativePath="dtest.c">
+			</File>
+			<File
+				RelativePath="yaffs_ecc.c">
+			</File>
+			<File
+				RelativePath="yaffs_flashif.c">
+			</File>
+			<File
+				RelativePath="yaffs_guts.c">
+			</File>
+			<File
+				RelativePath="yaffs_ramdisk.c">
+			</File>
+			<File
+				RelativePath="yaffscfg.c">
+			</File>
+			<File
+				RelativePath="yaffsfs.c">
+			</File>
+		</Filter>
+		<Filter
+			Name="Header Files"
+			Filter="h;hpp;hxx;inl">
+			<File
+				RelativePath="devextras.h">
+			</File>
+			<File
+				RelativePath="yaffs_ecc.h">
+			</File>
+			<File
+				RelativePath="yaffs_flashif.h">
+			</File>
+			<File
+				RelativePath="yaffs_guts.h">
+			</File>
+			<File
+				RelativePath="yaffs_ramdisk.h">
+			</File>
+			<File
+				RelativePath="yaffscfg.h">
+			</File>
+			<File
+				RelativePath="yaffsfs.h">
+			</File>
+			<File
+				RelativePath="yaffsinterface.h">
+			</File>
+			<File
+				RelativePath="yportenv.h">
+			</File>
+		</Filter>
+	</Files>
+	<Globals>
+		<Global
+			Name="CL-Release-armads_2-Linker"
+			Value="-d -s -map -list $(OutDir)\$(ProjectName).map -o $(OutDir)\$(ProjectName)$(OutputExt) -ro-base 0x12000 $(ObjectFiles) $(Libraries)"/>
+		<Global
+			Name="CL-Project-Env"
+			Value=""/>
+		<Global
+			Name="CL-SkipLinker"
+			Value="false"/>
+		<Global
+			Name="CL-Debug-armads_2-Linker"
+			Value="-d -s -map -list $(OutDir)\$(ProjectName).map -o $(OutDir)\$(ProjectName)$(OutputExt) -ro-base 0x12000 $(ObjectFiles) $(Libraries)"/>
+		<Global
+			Name="CL-Release-armads_2-C++_Compiler"
+			Value="-g -c -cpu ARM7TDMI -apcs /inter -I . $(InputRelPath) -o $(OutDir)\$(InputName)$(OutputExt)"/>
+		<Global
+			Name="CL-Working-Dir"
+			Value="$(ProjectDir)"/>
+		<Global
+			Name="CL-PostLink-Commands"
+			Value="copy $(OutDir)\$(ProjectName)$(OutputExt) ..\"/>
+		<Global
+			Name="CL-Project-Type"
+			Value="Library"/>
+		<Global
+			Name="CL-Release-armads_2-Librarian"
+			Value=";-r ..\lib\$(ProjectName)$(OutputExt) $(ObjectFiles:10);"/>
+		<Global
+			Name="CL-Debug-armads_2-C_Compiler"
+			Value="-I ..\..\HWDevice_SC344B0X\Flash -dCONFIG_YAFFS_DIRECT -g -c -cpu ARM7TDMI -apcs /inter -I . $(InputRelPath) -o $(OutDir)\$(InputName)$(OutputExt)"/>
+		<Global
+			Name="CL-CompileInSourceDir"
+			Value="false"/>
+		<Global
+			Name="CL-Debugger"
+			Value=""/>
+		<Global
+			Name="CL-Release-armads_2-Assembler"
+			Value="-g -cpu ARM7TDMI -apcs /inter -o $(OutDir)\$(InputName)$(OutputExt) $(InputRelPath)"/>
+		<Global
+			Name="CL-Project-Toolset"
+			Value="armads_2"/>
+		<Global
+			Name="CL-Debug-armads_2-C++_Compiler"
+			Value="-g -c -cpu ARM7TDMI -apcs /inter -I . $(InputRelPath) -o $(OutDir)\$(InputName)$(OutputExt)"/>
+		<Global
+			Name="CL-Release-armads_2-C_Compiler"
+			Value="-apcs /inter -g -c -cpu ARM7TDMI -DCONFIG_YAFFS_DIRECT=1 -DCONFIG_YAFFS_SHORT_NAMES_IN_RAM=1  -I . $(InputRelPath) -o $(OutDir)\$(InputName)$(OutputExt)"/>
+		<Global
+			Name="CL-Debug-armads_2-Librarian"
+			Value=";-r $(OutDir)\$(ProjectName)$(OutputExt) $(ObjectFiles:10);"/>
+		<Global
+			Name="CL-Debug-armads_2-Assembler"
+			Value="-g -cpu ARM7TDMI -apcs /inter -o $(OutDir)\$(InputName)$(OutputExt) $(InputRelPath)"/>
+	</Globals>
+</VisualStudioProject>

@@ -1,0 +1,249 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文（中华人民共和国） resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""res\\SummonDlg.rc2""  // 非 Microsoft Visual C++ 编辑资源\r\n"
+    "#include ""afxres.rc""         // 标准组件\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\SummonDlg.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_SUMMONDLG_DIALOG DIALOGEX 0, 0, 493, 294
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | 
+    WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "SummonDlg"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    CONTROL         "mp3_decode",IDC_RADIO_MP3_DE,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,40,18,58,10
+    CONTROL         "mp3_encode",IDC_RADIO_MP3_EN,"Button",
+                    BS_AUTORADIOBUTTON,40,33,68,14
+    CONTROL         "adpcm_encode",IDC_RADIO_ADPCM_EN,"Button",
+                    BS_AUTORADIOBUTTON,40,51,64,10
+    CONTROL         "adpcm_decode",IDC_RADIO_ADPCM_DE,"Button",
+                    BS_AUTORADIOBUTTON,40,66,64,10
+    CONTROL         "AAC encode",IDC_RADIO_AAC_ENCODE,"Button",
+                    BS_AUTORADIOBUTTON,40,79,55,10
+    CONTROL         "standard stereo",IDC_SUMMON_MODE,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,40,113,67,10
+    CONTROL         "joint stereo",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,40,
+                    127,53,10
+    CONTROL         "dule channel",IDC_RADIO3,"Button",BS_AUTORADIOBUTTON,40,
+                    139,56,10
+    CONTROL         "mono",IDC_RADIO4,"Button",BS_AUTORADIOBUTTON,40,153,33,
+                    10
+    CONTROL         "left",IDC_CHECK_SUMMON_CHANNEL_LEFT,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,55,164,27,10
+    CONTROL         "right",IDC_CHECK_SUMMON_CHANNEL_RIGHT,"Button",
+                    BS_AUTOCHECKBOX,55,177,31,10
+    CONTROL         "Constant bit rate",IDC_RADIO_SUMMON_BITRATE,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,153,97,71,10
+    CONTROL         "Variable Bit Rate ",IDC_RADIO1,"Button",
+                    BS_AUTORADIOBUTTON,154,130,71,10
+    CONTROL         "Average bit rate",IDC_RADIO6,"Button",
+                    BS_AUTORADIOBUTTON,153,199,64,10
+    CONTROL         "Set Bandwidth",IDC_RADIO_SUMMON_AAC_BANDWIDTH,"Button",
+                    BS_AUTORADIOBUTTON,155,236,62,10
+    COMBOBOX        IDC_COMBO_SUMMON_OUTPUT_MPEG_VERSION,296,143,94,12,
+                    CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_SUMMON_OUTPUT_AAC_VERSION,294,180,97,13,
+                    CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_SUMMON_MP3_LEFTGAIN,81,163,24,12,ES_NUMBER | 
+                    WS_DISABLED,WS_EX_LEFTSCROLLBAR
+    EDITTEXT        IDC_EDIT_SUMMON_MP3_RIGHTGAIN,82,177,25,12,ES_NUMBER | 
+                    WS_DISABLED,WS_EX_LEFTSCROLLBAR
+    EDITTEXT        IDC_SUMMON_IN,132,23,73,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "&IN",IDC_BUTTON_SUMMON_IN,211,22,27,14
+    EDITTEXT        IDC_SUMMON_OUT,132,49,73,17,ES_AUTOHSCROLL
+    PUSHBUTTON      "&OUT",IDC_BUTTON_SUMMON_OUT,213,49,28,14
+    LTEXT           "Min",IDC_STATIC,150,148,13,11
+    LTEXT           "Max",IDC_STATIC,149,165,18,8
+    COMBOBOX        IDC_COMBO_SUMMON_CBR,175,113,86,12,CBS_DROPDOWN | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_SUMMON_VBRMIN,175,145,87,12,CBS_DROPDOWN | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_SUMMON_VBRMAX,175,164,87,13,CBS_DROPDOWN | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_SUMMON_VBRQUALITY,175,182,87,30,CBS_DROPDOWN | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_SUMMON_SAMPLERATE,171,222,90,15,CBS_DROPDOWN | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_SUMMON_AAC_BANDWIDTH,172,249,89,12,
+                    CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "",IDC_SLIDER_SUMMON_QUALITY,"msctls_trackbar32",
+                    TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,291,116,100,9
+    GROUPBOX        "Output Mode",IDC_STATIC,283,89,132,114
+    PUSHBUTTON      "&Apply",IDC_SUMMON_APPLY,421,30,50,14
+    DEFPUSHBUTTON   "&Exit",IDCANCEL,421,7,50,16
+    GROUPBOX        "mode",IDC_STATIC,24,7,90,86
+    CONTROL         "",IDC_SUMMON_LAME_PROGRESS,"msctls_progress32",
+                    WS_BORDER,273,43,127,8
+    GROUPBOX        "File",IDC_STATIC,123,15,132,65
+    GROUPBOX        "Status",IDC_STATIC,265,20,148,57
+    GROUPBOX        "Channel Select",IDC_STATIC,25,100,89,88
+    GROUPBOX        "BitRate",IDC_STATIC,129,86,149,186
+    LTEXT           "VBR Quality",IDC_STATIC,129,185,38,8
+    LTEXT           "Target Sample Rate",IDC_STATIC,133,209,64,8
+    LTEXT           "Encode Quality",IDC_STATIC,294,105,49,8
+    LTEXT           "Mpeg Version",IDC_STATIC,295,130,55,10
+    LTEXT           "AAC Version",IDC_STATIC,289,172,61,9
+    EDITTEXT        IDC_SUMMON_ABR,224,196,37,14,ES_NUMBER
+    SCROLLBAR       IDC_SCROLLBAR_SUMMON_ABR,265,195,8,12,SBS_VERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080403a8"
+        BEGIN
+            VALUE "CompanyName", "TODO: <公司名>"
+            VALUE "FileDescription", "TODO: <文件说明>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "SummonDlg.exe"
+            VALUE "LegalCopyright", "TODO: (C) <公司名>。保留所有权利。"
+            VALUE "OriginalFilename", "SummonDlg.exe"
+            VALUE "ProductName", "TODO: <产品名>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "翻译", 0x804, 936
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_SUMMONDLG_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 471
+        VERTGUIDE, 40
+        VERTGUIDE, 114
+        VERTGUIDE, 471
+        TOPMARGIN, 7
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// RT_MANIFEST
+//
+
+IDR_MANIFEST            RT_MANIFEST             "res\\SummonDlg.manifest"
+#endif    // 中文（中华人民共和国） resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(936)
+#include "res\SummonDlg.rc2"  // 非 Microsoft Visual C++ 编辑资源
+#include "afxres.rc"         // 标准组件
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

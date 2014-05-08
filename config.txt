@@ -1,0 +1,288 @@
+
+InputDirectory	=	./input/
+OutputDirectory	=	./output/
+SaveRegListFile =	reglist.dat
+SensorInputFile	=	NULL
+
+SifInputFile	=	648x488.raw8
+// IspInputFile	=	640.raw
+// IspInputFile	=	640x480.cfa
+IppInputFile	=	640x480.yuv422
+LbufInputFile	=	NULL
+JpegInputFile	=	NULL
+//LayerBInputFile	=	NULL
+//LayerAInputFile	=	NULL
+
+
+SifPrintInput	=	NULL
+IspPrintInput	=	ispinput.dat
+IppPrintInput	=	yuv.dat
+LbufPrintInput	=	NULL
+// JpegPrintInput	=	jj.dat
+
+IspBlackPrintInput	=	NULL
+IspTestbarPrintInput =	NULL
+IspLensPrintInput =	NULL
+IspDpdPrintInput	=	NULL
+IspGainPrintInput	=	NULL
+IspInterpolatePrintInput	=	NULL
+IspColorCorrectPrintInput	=	bb.dat
+IspGammaCorrectPrintInput	=	NULL
+// IspColorConvertPrintInput	=	bb.dat
+// IspEdgeEnhancePrintInput = yuv.dat
+// IspEdgePrintInput	=	yuv.dat
+
+IppEdgePrintInput	=	NULL
+IppZoomPrintInput	=	NULL
+IppSpecialPrintInput	=	NULL
+IppPrefilterPrintInput	=	NULL
+IppDisplayPrintInput	=	NULL
+// IppCapturePrintInput	=	bb.dat
+
+LbufZoomPrintInput	=	NULL
+Lbuf2BlockPrintInput	=	NULL
+
+JpegEncodePrintInput	=	jpeg.jpg
+
+
+11@3103
+
+18@1884
+01@1888
+
+02@82c
+87@82d
+01@82e
+e7@82f
+
+00@800
+40@801
+
+00@810
+04@811
+02@812
+83@813
+
+00@81c
+04@81d
+01@81e
+e3@81f
+
+
+21@2000
+00@2001
+40@2002
+01@2003
+f0@2004
+00@2005
+40@200a
+60@200b
+05@200c
+0f@200d
+05@200e
+ff@200f
+40@2010
+01@2011
+f0@2012
+00@2013
+29@2014
+
+40@2022
+40@2023
+40@2024
+
+40@2026
+20@2027
+5a@202c
+f3@202d
+f3@202e
+f3@202f
+5a@2030
+f3@2031
+f3@2032
+f3@2033
+5a@2034
+
+00@204a
+13@204b
+38@204c
+59@204d
+79@204e
+92@204f
+a7@2050
+b9@2051
+c8@2052
+d4@2053
+df@2054
+e7@2055
+ee@2056
+f4@2057
+f9@2058
+fc@2059
+ff@205a
+
+00@205b
+13@205c
+38@205d
+59@205e
+79@205f
+92@2060
+a7@2061
+b9@2062
+c8@2063
+d4@2064
+df@2065
+e7@2066
+ee@2067
+f4@2068
+f9@2069
+fc@206a
+ff@206b
+
+00@206c
+13@206d
+38@206e
+59@206f
+79@2070
+92@2071
+a7@2072
+b9@2073
+c8@2074
+d4@2075
+df@2076
+e7@2077
+ee@2078
+f4@2079
+f9@207a
+fc@207b
+ff@207c
+
+ff@208b
+ff@208c
+ff@208d
+01@2081
+
+ff@20a0
+ff@20a1
+ff@20a2
+ff@20a3
+ff@20a4
+ff@20a5
+ff@20a6
+ff@20a7
+ff@20a8
+ff@20a9
+ff@20aa
+ff@20ab
+ff@20ac
+ff@20ad
+ff@20ae
+ff@20af
+ff@20b0
+ff@20b1
+
+03@20c0
+03@20c2
+03@20c4
+03@20c6
+00@20c8
+
+
+00@1c00
+10@1c01
+80@1c02
+02@1c03
+e0@1c04
+01@1c05
+80@1c06
+02@1c07
+e0@1c08
+01@1c09
+00@1c0a
+00@1c0b
+00@1c0c
+00@1c0d
+
+// 00@1c0e
+// ff@1c0f
+// 00@1c10
+// 00@1c11
+
+35@1c0e
+3e@1c0f
+0d@1c10
+1f@1c11
+
+00@1c12
+01@1c13
+00@1c14
+00@1c15
+01@1c16
+01@1c17
+05@1c18
+01@1c19
+80@1c1a
+02@1c1b
+e0@1c1c
+01@1c1d
+80@1c1e
+00@1c1f
+60@1c20
+00@1c21
+80@1c22
+ff@1c23
+80@1c24
+80@1c25
+40@1c26
+c0@1c27
+00@1c28
+60@1c29
+40@1c2a
+40@1c2b
+00@1c2c
+00@1c2d
+00@1c2e
+00@1c2f
+
+02@0c03
+80@0c04
+01@0c05
+e0@0c06
+
+02@0c07
+80@0c08
+01@0c09
+e0@0c0a
+
+a8@0003
+3d@0004
+00@0008
+00@0009
+28@000a
+00@000b
+00@000c
+02@000d
+58@000e
+00@000f
+
+02@0014
+80@0015
+01@0016
+e0@0017
+01@0018
+11@0019
+
+00@001c
+00@001d
+00@001e
+03@001f
+
+0a@0020
+08@0021
+49@0022
+07@0023
+49@0024
+07@0025
+00@0026
+00@0027
+a0@0028

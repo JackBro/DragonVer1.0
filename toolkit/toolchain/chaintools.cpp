@@ -1,0 +1,5 @@
+
+void nullChainTools(void)
+{
+}
+

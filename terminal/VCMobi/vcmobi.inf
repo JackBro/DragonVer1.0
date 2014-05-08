@@ -1,0 +1,63 @@
+; Installation inf for the Vimicro USB Bulk comminucation protocol
+;
+; (c) Copyright 2004 Vimicro
+;
+
+[Version]
+Signature="$CHICAGO$"
+Class=USB
+ClassGUID={36FC9E60-C465-11CF-8056-444553540000}
+provider=%VIMICRO%
+DriverVer=08/05/1999,5.00.2064
+CatalogFile=vcmobi.cat
+
+[SourceDisksNames]
+1=%Disk_Description%,,,
+
+[SourceDisksFiles]
+VCMOBI.sys = 1
+
+[Manufacturer]
+%MfgName%=Vimicro
+
+[Vimicro]
+%USB\VID_0AC8&PID_0164&mi_01.DeviceDesc%=VCMOBI.Dev, USB\VID_0AC8&PID_0164&mi_01
+%USB\VID_0AC8&PID_0166.DeviceDesc%=VCMOBI.Dev, USB\VID_0AC8&PID_0166
+
+[DestinationDirs]
+VCMOBI.Files.Ext = 10,System32\Drivers
+
+[VCMOBI.Dev.NT]
+CopyFiles=VCMOBI.Files.Ext
+
+[VCMOBI.Dev.NT.Services]
+Addservice = VCMOBI, 0x00000002, VCMOBI.AddService
+
+[VCMOBI.AddService]
+DisplayName    = %VCMOBI.SvcDesc%
+ServiceType    = 1                  ; SERVICE_KERNEL_DRIVER
+StartType      = 3                  ; SERVICE_DEMAND_START
+ErrorControl   = 1                  ; SERVICE_ERROR_NORMAL
+ServiceBinary  = %10%\System32\Drivers\VCMOBI.sys
+AddReg         = VCMOBI.AddReg
+LoadOrderGroup = Base
+
+[VCMOBI.AddReg]
+HKR,,DevLoader,,*ntkern
+HKR,,NTMPDriver,,VCMOBI.sys
+HKR,"Parameters","MaximumTransferSize",0x10001,4096
+HKR,"Parameters","DebugLevel",0x10001,2
+HKR,"Parameters","VCMobiEnable",0x10001,1
+
+[VCMOBI.Files.Ext]
+VCMOBI.sys
+
+;---------------------------------------------------------------;
+
+[Strings]
+VIMICRO="Vimicro"
+MfgName="Vimicro lab"
+Disk_Description="VCMOBI Installation Disk"
+USB\VID_0AC8&PID_0164&mi_01.DeviceDesc="VCMobi.Sys Vimicro usb Comm&&Disk protocol"
+USB\VID_0AC8&PID_0166.DeviceDesc="VCMobi.Sys Vimicro usb Comm protocol"
+VCMobi.SvcDesc="VCMobi.Sys Comminucation protocol"

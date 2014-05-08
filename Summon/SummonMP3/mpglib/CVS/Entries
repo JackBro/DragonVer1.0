@@ -1,0 +1,25 @@
+/Makefile.am/1.1/Thu Dec 15 05:06:20 2005/-kkv/
+/Makefile.in/1.1/Thu Dec 15 05:06:20 2005/-kkv/
+/common.c/1.1/Thu Dec 15 05:06:20 2005/-kkv/
+/common.h/1.1/Thu Dec 15 05:06:20 2005/-kkv/
+/dct64_i386.c/1.1/Thu Dec 15 05:06:20 2005/-kkv/
+/dct64_i386.h/1.1/Thu Dec 15 05:06:20 2005/-kkv/
+/decode_i386.c/1.1/Thu Dec 15 05:06:20 2005/-kkv/
+/decode_i386.h/1.1/Thu Dec 15 05:06:20 2005/-kkv/
+/huffman.h/1.1/Thu Dec 15 05:06:20 2005/-kkv/
+/interface.c/1.1/Thu Dec 15 05:06:20 2005/-kkv/
+/interface.h/1.1/Thu Dec 15 05:06:20 2005/-kkv/
+/l2tables.h/1.1/Thu Dec 15 05:06:20 2005/-kkv/
+/layer1.c/1.1/Thu Dec 15 05:06:20 2005/-kkv/
+/layer1.h/1.1/Thu Dec 15 05:06:20 2005/-kkv/
+/layer2.c/1.1/Thu Dec 15 05:06:20 2005/-kkv/
+/layer2.h/1.1/Thu Dec 15 05:06:20 2005/-kkv/
+/layer3.c/1.1/Thu Dec 15 05:06:20 2005/-kkv/
+/layer3.h/1.1/Thu Dec 15 05:06:20 2005/-kkv/
+/mpg123.h/1.1/Thu Dec 15 05:06:20 2005/-kkv/
+/mpglib.h/1.1/Thu Dec 15 05:06:20 2005/-kkv/
+/summonmpglib.dsp/1.1/Thu Dec 15 05:06:20 2005/-kkv/
+/summonmpglib.vcproj/1.1/Thu Dec 15 05:06:20 2005/-kkv/
+/tabinit.c/1.1/Thu Dec 15 05:06:20 2005/-kkv/
+/tabinit.h/1.1/Thu Dec 15 05:06:20 2005/-kkv/
+D

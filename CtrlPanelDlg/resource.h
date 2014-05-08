@@ -1,0 +1,136 @@
+//{{NO_DEPENDENCIES}}
+// Microsoft Visual C++ generated include file.
+// Used by CtrlPlane.rc
+//
+#define IDD_HOSTPANEL_DLG               190
+
+#define IDD_TESTFPGA_DLG                191
+#define IDD_V568SDCARD_DLG              192
+#define IDD_V568SENSOR_DLG              193
+#define IDD_USBCHIP_DLG                 194
+#define IDD_NANDFAT_DLG                 195
+#define IDC_GETEINT_BUTTON              1010
+#define IDC_SETEINT_BUTTON              1011
+#define IDC_EXTINT7_COMBO               1012
+#define IDC_OPENDESTFILE_BTN            1013
+#define IDC_SRCFILE_COMBO               1014
+#define IDC_EXTINT5_COMBO               1014
+#define IDC_DESTFILE_COMBO              1015
+#define IDC_EXTINT4_COMBO               1015
+#define IDC_EXTINT4_7_COMBO             1015
+#define IDC_WRITEEP_COMBO               1016
+#define IDC_EXTINT3_COMBO               1016
+#define IDC_READEP_COMBO                1017
+#define IDC_BATCHWRITE_BUTTON           1017
+#define IDC_EXTINT2_COMBO               1017
+#define IDC_TESTREGCHNL_BUTTON          1018
+#define IDC_EXTINT1_COMBO               1018
+#define IDC_OPENBATCHFILE_BTN           1019
+#define IDC_EXTINT0_COMBO               1019
+#define IDC_REGTYPE_COMBO               1020
+#define IDC_COMBO1                      1020
+#define IDC_EXTINT6_COMBO               1020
+#define IDC_TIMER_COMBO                 1020
+#define IDC_REGADDR_EDIT                1021
+#define IDC_BUTTON1                     1021
+#define IDC_SETTIMER_BUTTON             1021
+#define IDC_INITNAND_BUTTON             1021
+#define IDC_BUTTON_READ                 1021
+#define IDC_REGVAL_EDIT                 1022
+#define IDC_REFRESH_BUTTON              1022
+#define IDC_BUTTON_READ2                1022
+#define IDC_BUTTON_WRITE                1022
+#define IDC_REGADDR_SPIN                1023
+#define IDC_WDT_EDIT                    1023
+#define IDC_BUTTON_READ3                1023
+#define IDC_BUTTON_READ_REG             1023
+#define IDC_INSTANT_CHECK               1024
+#define IDC_WDT_BUTTON                  1024
+#define IDC_BUTTON_WR_REG               1024
+#define IDC_WRITEREG_BUTTON             1025
+#define IDC_CHECK1                      1025
+#define IDC_WDTEN_CHECK                 1025
+#define IDC_REGREAD_BUTTON              1026
+#define IDC_MAKERID_EDIT                1026
+#define IDC_REGVAL_EDIT2                1027
+#define IDC_DEVICEID_EDIT               1027
+#define IDC_READBUF_BUTTON              1028
+#define IDC_CMDLIST_COMBO               1028
+#define IDC_WRITEBUF_BUTTON             1029
+#define IDC_SENDCMD_BUTTON              1029
+#define IDC_FLASHTYPE_STATIC            1029
+#define IDC_GETMCLK_BUTTON              1030
+#define IDC_LENGTH_EDIT                 1030
+#define IDC_SETMCLK_BUTTON              1031
+#define IDC_ADDRESS_EDIT                1031
+#define IDC_ERASE_BUTTON                1031
+#define IDC_AUTOFILE_CHECK              1032
+#define IDC_WRITESRAM_BUTTON            1032
+#define IDC_DATASTART_EDIT              1032
+#define IDC_GETI2SCLK_BUTTON            1033
+#define IDC_READSRAM_BUTTON             1033
+#define IDC_DATALEN_EDIT                1033
+#define IDC_FILELENGTH_EDIT             1034
+#define IDC_DATAREAD_BUTTON             1034
+#define IDC_SAVE_BUTTON                 1035
+#define IDC_CMDPARA0_EDIT               1035
+#define IDC_DATAWRITE_BUTTON            1035
+#define IDC_ARMFILE_COMBO               1036
+#define IDC_CMDPARA1_EDIT               1036
+#define IDC_SPAREREAD_BUTTON            1036
+#define IDC_LOAD_BUTTON                 1037
+#define IDC_CMDPARA2_EDIT               1037
+#define IDC_SPAREWRITE_BUTTON           1037
+#define IDC_DATALENGTH_EDIT             1038
+#define IDC_CMDPARA3_EDIT               1038
+#define IDC_BLOCK_EDIT                  1038
+#define IDC_HOSTMCLK_EDIT               1039
+#define IDC_AUTOFILE_CHECK1             1039
+#define IDC_PAGE_EDIT                   1039
+#define IDC_I2SCLK_EDIT                 1040
+#define IDC_CMDPARA4_EDIT               1040
+#define IDC_BUTTON2                     1040
+#define IDC_BLKUPDATE_BUTTON            1040
+#define IDC_DOWNLOAD_BUTTON             1041
+#define IDC_CMDPARA5_EDIT               1041
+#define IDC_SAVEGBUF_BUTTON             1042
+#define IDC_CMDPARA6_EDIT               1042
+#define IDC_EDIT_RW_TIMES               1042
+#define IDC_LOADGBUF_BUTTON             1043
+#define IDC_TESTREGRW_BUTTON            1043
+#define IDC_EDIT_RW_USETIMES            1043
+#define IDC_OPENEMU_BUTTON              1043
+#define IDC_OPEN_EMU_BUTTON             1043
+#define IDC_SETI2SCLK_BUTTON            1044
+#define IDC_CLOSE_EMU_BUTTON            1044
+#define IDC_T5INTERVAL_EDIT             1045
+#define IDC_BUTTON3                     1045
+#define IDC_FS_MOUNT_BUTTON             1045
+#define IDC_BEEP_CHECK                  1046
+#define IDC_BEEP_CHECK2                 1047
+#define IDC_KEYPROCESS_CHECK            1047
+#define IDC_SETTIMER5_BUTTON            1048
+#define IDC_SETTIMER5_BUTTON2           1049
+#define IDC_SETTIMER4_BUTTON            1049
+#define IDC_BUTTON_TEST_SENSOR          1050
+#define IDC_WRITEFIFO_BTN               1051
+#define IDC_READFIFO_BTN                1052
+#define IDC_DBUGPRINT_BTN               1053
+#define IDC_DBUGPRINT_BTN2              1054
+#define IDC_USBCHIP_MISC_BTN            1054
+#define IDC_RADIO_MUL8                  1213
+#define IDC_RADIO_MUL16                 1214
+#define IDC_RADIO_SEP                   1215
+#define IDC_OPENSRCHFILE_BTN            1291
+#define IDC_ATTACHNODE_CHECK            1292
+
+// Next default values for new objects
+// 
+#ifdef APSTUDIO_INVOKED
+#ifndef APSTUDIO_READONLY_SYMBOLS
+#define _APS_NEXT_RESOURCE_VALUE        102
+#define _APS_NEXT_COMMAND_VALUE         40001
+#define _APS_NEXT_CONTROL_VALUE         1046
+#define _APS_NEXT_SYMED_VALUE           101
+#endif
+#endif

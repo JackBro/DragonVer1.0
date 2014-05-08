@@ -1,0 +1,260 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文（中华人民共和国） resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_V938HOSTIF_DLG DIALOGEX 0, 0, 388, 214
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "",IDC_STATIC,0,4,324,47
+    LTEXT           "数据长度",IDC_STATIC,14,73,35,8
+    EDITTEXT        IDC_V938HOSTIFADDRESS_EDIT,63,90,40,14,ES_AUTOHSCROLL
+    LTEXT           "SRAM地址",IDC_STATIC,12,91,38,8
+    PUSHBUTTON      "WriteSram",IDC_V938HOSTIFWRITESRAM_BUTTON,61,113,40,14
+    PUSHBUTTON      "ReadSram",IDC_V938HOSTIFREADSRAM_BUTTON,61,131,40,14
+    GROUPBOX        "Sram R/W (Hex)",IDC_STATIC,8,60,114,90
+    LTEXT           "将Sram R/W到PC的文件",IDC_STATIC,13,115,35,27
+    EDITTEXT        IDC_V938HOSTIFLENGTH_EDIT,64,71,40,14,ES_AUTOHSCROLL
+END
+
+IDD_V938CPM_DLG DIALOGEX 0, 0, 674, 262
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "",IDC_STATIC,1,1,324,47
+    GROUPBOX        "Clock",IDC_STATIC,5,56,106,150
+    PUSHBUTTON      "Start",IDC_938CPMCLKSTART_BUTTON,24,140,64,15
+    PUSHBUTTON      "Stop",IDC_938CPMCLKSTOP_BUTTON,24,161,64,14
+    PUSHBUTTON      "Reset",IDC_938CPMCLKRST_BUTTON,25,180,64,16
+    PUSHBUTTON      "Pll Set",IDC_938CPMPLLSET_BUTTON,24,119,64,15
+    LTEXT           "Mclk",IDC_STATIC,14,92,14,8
+    EDITTEXT        IDC_938CPMMCLK_EDIT,34,90,52,14,ES_AUTOHSCROLL
+    GROUPBOX        "Interrupt",IDC_STATIC,229,57,238,147
+    PUSHBUTTON      "Lock",IDC_938CPMINTLOCK_BUTTON,393,144,64,16
+    PUSHBUTTON      "Test   Init",IDC_938CPMTESTINIT_BUTTON,117,219,106,23
+    EDITTEXT        IDC_938CPMTRIGWIDTH_EDIT,411,119,52,14,ES_AUTOHSCROLL
+    LTEXT           "Width",IDC_STATIC,381,120,21,8
+    CONTROL         "Pll Bypass Mode",IDC_938CPMPLLBYMODE_CHECK,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,15,72,67,10
+    CONTROL         "Level Trigger ",IDC_938CPMINTLEVELTRIG_CHECK,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,381,69,59,10
+    CONTROL         "Low Level",IDC_938CPMINTLOWLEVEL_CHECK,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,381,85,47,10
+    CONTROL         "Fall Edge",IDC_938CPMINTFALLTRIG_CHECK,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,381,100,45,10
+    LISTBOX         IDC_INTTYPE_LIST,247,70,115,108,LBS_SORT | 
+                    LBS_MULTIPLESEL | LBS_HASSTRINGS | LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP,WS_EX_LEFTSCROLLBAR
+    CONTROL         "All selected",IDC_938CPMINTALLSEL_CHECK,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,248,185,52,10
+    PUSHBUTTON      "Test",IDC_938CPMINTTEST_BUTTON,394,169,64,16
+    GROUPBOX        "Timer",IDC_STATIC,116,56,106,150
+    PUSHBUTTON      "Stop",IDC_938CPMTIMERSTOP_BUTTON,135,162,64,15
+    PUSHBUTTON      "Rest",IDC_938CPMTIMERRESET_BUTTON,135,183,64,14
+    PUSHBUTTON      "Start",IDC_938CPMTIMERSTART_BUTTON,135,140,64,15
+    LTEXT           "Timer Val",IDC_STATIC,124,101,30,8
+    EDITTEXT        IDC_938CPMTIMERVAL_EDIT,164,101,49,14,ES_AUTOHSCROLL
+    LTEXT           "Timer count",IDC_STATIC,124,120,38,8
+    EDITTEXT        IDC_938CPMTIMERCNT_EDIT,165,119,47,14,ES_AUTOHSCROLL
+    CONTROL         "STRM Timer",IDC_938CPMTIMERTYPE_CHECK,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,125,70,53,10
+    LTEXT           "Timer Base",IDC_STATIC,125,85,36,8
+    EDITTEXT        IDC_938CPMTIMERBASE_EDIT,165,83,49,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Refresh",IDC_938CPMREFRESH_BUTTON,279,220,106,23
+    GROUPBOX        "DAC Setting",IDC_STATIC,341,0,316,50
+    EDITTEXT        IDC_DACMCLKFREQ_EDIT,427,28,34,16,ES_AUTOHSCROLL
+    CONTROL         "data from off chip",IDC_DACDATASRCOFFCHIP_CHECK,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,389,11,73,10
+    LTEXT           "Mclk Freq",IDC_STATIC,390,31,34,8
+    CONTROL         "Test",IDC_DACTEST_CHECK,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,470,11,30,10
+    CONTROL         "DEEPTH",IDC_DACDEEPTH_CHECK,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,516,11,41,10
+    CONTROL         "NRST",IDC_DACNRST_CHECK,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,571,11,33,10
+    CONTROL         "SB",IDC_DACSB_CHECK,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,616,12,24,10
+    CONTROL         "SB_DAC",IDC_DACSBDAC_CHECK,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,470,30,42,10
+    CONTROL         "Mute",IDC_DACMUTE_CHECK,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,516,30,32,10
+    EDITTEXT        IDC_DACIOWL_EDIT,615,28,34,16,ES_AUTOHSCROLL
+    LTEXT           "IO word length",IDC_STATIC,560,31,51,8
+    PUSHBUTTON      "Set",IDC_DACSET_BUTTON,348,16,31,19
+    GROUPBOX        "IIS",IDC_STATIC,475,58,185,77
+    EDITTEXT        IDC_IISDIV2_EDIT,521,71,34,16,ES_AUTOHSCROLL
+    LTEXT           "Divider2",IDC_STATIC,483,73,34,8
+    EDITTEXT        IDC_IISDIV3_EDIT,609,71,34,16,ES_AUTOHSCROLL
+    LTEXT           "Divider3",IDC_STATIC,571,74,34,8
+    CONTROL         "Master mode",IDC_IISMASTERMODE_CHECK,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,483,95,53,10
+    CONTROL         "Mclk to external",IDC_IISMCLKTOEXTERN_CHECK,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,572,95,69,10
+    CONTROL         "Sclk poly invert",IDC_IISSCLKINVERT_CHECK,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,484,116,63,10
+    PUSHBUTTON      "Set",IDC_GPIOSET938_BUTTON,596,206,48,17
+    GROUPBOX        "GPIO",IDC_STATIC,474,134,185,127
+    COMBOBOX        IDC_GPIOPINIDX938_COMBO,517,190,59,30,CBS_DROPDOWN | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Pin index",IDC_STATIC,481,193,30,8
+    CONTROL         "Configure",IDC_GPIOCFG_CHECK,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,596,192,44,10
+    CONTROL         "Mode",IDC_GPIOMOD938_CHECK,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,541,211,34,10
+    CONTROL         "Director",IDC_GPIODIR938_CHECK,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,483,210,42,10
+    GROUPBOX        "Function select",IDC_STATIC,478,144,177,39
+    CONTROL         "IO",IDC_GPIOFUNCSEL938_RADIO,"Button",
+                    BS_AUTORADIOBUTTON,484,160,24,10
+    CONTROL         "Led&&MTR",IDC_GPIOFUNCSEL938_RADIO2,"Button",
+                    BS_AUTORADIOBUTTON,517,161,46,10
+    CONTROL         "IIS",IDC_GPIOFUNCSEL938_RADIO3,"Button",
+                    BS_AUTORADIOBUTTON,570,161,25,10
+    CONTROL         "PA Test",IDC_GPIOFUNCSEL938_RADIO4,"Button",
+                    BS_AUTORADIOBUTTON,607,162,41,10
+    PUSHBUTTON      "Set",IDC_IISSET_BUTTON,578,111,48,17
+    EDITTEXT        IDC_GPIOREADBACKVAL938_EDIT,550,234,34,16,ES_AUTOHSCROLL
+    LTEXT           "Read Back value",IDC_STATIC,485,236,58,8
+    PUSHBUTTON      "Read",IDC_GPIOREADBACK938_BUTTON,597,232,48,17
+END
+
+IDD_V938SEQ_DLG DIALOGEX 0, 0, 397, 218
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "",IDC_STATIC,0,4,324,47
+END
+
+IDD_V938WS_DLG DIALOGEX 0, 0, 406, 225
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "",IDC_STATIC,0,4,324,47
+END
+
+IDD_V938MP3_DLG DIALOGEX 0, 0, 342, 182
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+END
+
+IDD_V938DEMO_DLG DIALOGEX 0, 0, 379, 204
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Open",IDC_OPEN938_BUTTON,14,54,64,22
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_V938CPM_DLG, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 261
+    END
+
+    IDD_V938SEQ_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 390
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 211
+    END
+
+    IDD_V938WS_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 399
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 218
+    END
+
+    IDD_V938MP3_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 335
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 175
+    END
+
+    IDD_V938DEMO_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 372
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 197
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // 中文（中华人民共和国） resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

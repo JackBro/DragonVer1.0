@@ -1,0 +1,1 @@
+copy .\terminal\terminal\debug\bios.bin .\output
